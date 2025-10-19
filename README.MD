@@ -1,4 +1,4 @@
-# SmartHome2 - Simulação de Casa Inteligente - Projeto IoT
+# SmartHome - Simulação de Casa Inteligente - Projeto IoT
 
 ![alt text](<Casa Inteligente-1.PNG>)
 
@@ -42,7 +42,7 @@ Siga os passos abaixo para executar o projeto localmente.
 
     git clone https://github.com/JuniorprogrammerCV/SmartHome.git
 
-    cd SmartHome2
+    cd SmartHome
 
 
 2.  **Instale as dependências:**
