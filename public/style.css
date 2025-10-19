@@ -168,3 +168,29 @@ body.dark-mode .theme-toggle-btn {
 body.dark-mode .desligado {
     color: #cf6679;
 }
+
+/* --- RESPONSIVIDADE PARA DISPOSITIVOS MÓVEIS --- */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduz o espaçamento em ecrãs pequenos */
+    }
+
+    .container {
+        flex-direction: column; /* Empilha os cartões verticalmente */
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Reduz o tamanho do título principal */
+    }
+
+    .theme-toggle-btn {
+        top: 10px;
+        right: 10px;
+    }
+
+    .device-display {
+        width: 90%; /* Torna o display do dispositivo flexível */
+    }
+}
