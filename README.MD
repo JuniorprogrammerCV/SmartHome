@@ -66,16 +66,20 @@ Siga os passos abaixo para executar o projeto localmente.
 
 ## 📂 Estrutura do Projeto
 
-├── server.js # Servidor backend (Express + Socket.io) 
-├── package.json # Dependências e scripts do projeto 
-└── public/ # Ficheiros do frontend 
-    ├── painel.html # Painel de controlo principal 
-    ├── ac.html # Páginas de estado individuais... 
-    ├── maquina_cafe.html 
-    ├── telemovel.html 
-    ├── script.js # Lógica do cliente (UI e comunicação com o servidor) 
-    └── style.css # Estilos da aplicação
-
+```
+/
+├── .gitignore          # Ignora a pasta node_modules
+├── package-lock.json   # Garante versões exatas das dependências
+├── package.json        # Dependências e scripts do projeto
+├── server.js           # Servidor backend (Express + Socket.io)
+└── public/             # Ficheiros do frontend
+    ├── painel.html     # Painel de controlo principal
+    ├── ac.html         # Páginas de estado individuais...
+    ├── maquina_cafe.html
+    ├── telemovel.html
+    ├── script.js       # Lógica do cliente (UI e comunicação)
+    └── style.css       # Estilos da aplicação
+```
 
 ### Como Funciona a Comunicação
 
