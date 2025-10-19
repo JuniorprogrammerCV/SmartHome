@@ -40,7 +40,7 @@ Siga os passos abaixo para executar o projeto localmente.
 
 1.  **Clone o repositório:**
 
-    git clone https://github.com/JuniorprogrammerCV/SmartHome2.git
+    git clone https://github.com/JuniorprogrammerCV/SmartHome.git
 
     cd SmartHome2
 
