@@ -1,6 +1,6 @@
 const socket = io();
 
-// --- FUNÇÃO AUXILIAR PARA ESTILO DOS CARDS ---
+// --- FUNÇÃO PARA ESTILO DOS CARDS ---
 function setCardStyle(cardId, color) {
   const cardEl = document.getElementById(cardId);
   if (cardEl) {
