@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controlo - Casa Inteligente do Junior</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Casa Inteligente do Junior</h1>
+        <h1>Painel de Controlo</h1>
+        <button id="btn-theme-toggle" class="theme-toggle-btn">🌙</button>
+    </header>
+
+    <div class="container">
+        
+        <div class="device-card" id="card-telemovel">
+            <h2>📱 Telemóvel</h2>
+            <p>Estado da Lanterna: <span id="lanterna-status">Desligada </span></p>
+            <button id="btn-lanterna-ligar">Ligar Lanterna</button>
+            <button id="btn-lanterna-desligar">Desligar Lanterna</button>
+        </div>
+
+        <div class="device-card" id="card-maquina_cafe">
+            <h2>☕ Máquina de Café</h2>
+            <p>Estado: <span id="cafe-status">Desligada</span></p>
+            <button id="btn-cafe-ligar">Fazer Café</button>
+            <button id="btn-cafe-desligar">Desligar</button>
+        </div>
+
+        <div class="device-card" id="card-ac">
+            <h2>❄️ Ar Condicionado</h2>
+            <p>Estado: <span id="ac-status">Desligado</span></p>
+            <p>Temperatura: <span id="ac-temp-display">22</span>°C</p>
+            <button id="btn-ac-toggle">Ligar/Desligar</button>
+            <div class="slider-container">
+                <label for="ac-temp-slider">Ajustar Temperatura:</label>
+                <input type="range" id="ac-temp-slider" min="16" max="30" value="22">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Casa Inteligente - Junior Delgado. Todos os direitos reservados.</p>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

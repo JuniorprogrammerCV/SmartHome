@@ -1,0 +1,170 @@
+/* Ficheiro: public/style.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap');
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background: #0f2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+.device-card {
+    background-color: rgba(22, 38, 46, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border: 3px solid rgba(0, 229, 255, 0.2);
+    margin-bottom: 20px;
+    font-weight: 600;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.device-card h2 {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 0;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(0, 229, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+button {
+    font-family: 'Share Tech Mono', monospace;
+    background-color: rgba(0, 229, 255, 0.1);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    font-weight: 700;
+    border: 1px solid #00e5ff;
+}
+
+button:hover {
+    background-color: #00e5ff;
+    color: #111;
+}
+
+.theme-toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    padding-bottom: 15px;
+    background-color: #ffffff54;
+}
+
+.theme-toggle-btn:hover {
+    background-color: #ffffff54;
+    
+}
+
+.slider-container {
+    margin-top: 15px;
+}
+
+/* Estilos para páginas de dispositivos individuais */
+.device-page {
+    background-color: #333;
+    color: white;
+}
+
+.device-display {
+    text-align: center;
+    background-color: #444;
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.device-display .status-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+.device-display .temp-display {
+    font-size: 3em;
+    font-weight: bold;
+    color: #17a2b8;
+}
+
+/* Classes de estado */
+.ligado {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.desligado {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.preparing {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+/* --- ESTILOS DO MODO ESCURO --- */
+body.dark-mode {
+    background: #000000;
+    color: #e0e0e0;
+}
+
+body.dark-mode h1 {
+    color: #00e5ff;
+}
+
+body.dark-mode .device-card h2 {
+    color: #00e5ff;
+}
+
+body.dark-mode .device-card {
+    background-color: rgba(221, 221, 221, 0.146);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .theme-toggle-btn {
+    background-color: #ffffffd7;
+    text-shadow: none;
+}
+
+body.dark-mode .desligado {
+    color: #cf6679;
+}
