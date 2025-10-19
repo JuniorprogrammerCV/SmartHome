@@ -1,4 +1,4 @@
-# SmartHome2 - Simulação de Casa Inteligente
+# SmartHome2 - Simulação de Casa Inteligente - Projeto IoT
 
 ![alt text](<Casa Inteligente-1.PNG>)
 
@@ -40,7 +40,8 @@ Siga os passos abaixo para executar o projeto localmente.
 
 1.  **Clone o repositório:**
 
-    git clone https://github.com/seu-usuario/SmartHome2.git
+    git clone https://github.com/JuniorprogrammerCV/SmartHome2.git
+
     cd SmartHome2
 
 
@@ -56,27 +57,29 @@ Siga os passos abaixo para executar o projeto localmente.
 
 
 4.  **Aceda à aplicação:**
-    Abra o seu navegador e aceda aos seguintes URLs:
-    -   **Painel de Controlo:** http://localhost:3000/painel.html
-    -   **Página do AC:** http://localhost:3000/ac.html
-    -   **Página da Máquina de Café:** http://localhost:3000/maquina_cafe.html
+    Abra o seu navegador e aceda ao seguintes URL:
 
-    *Abra o painel em duas janelas do navegador para ver a magia da sincronização em tempo real!*
+    -   **Painel de Controlo:** http://localhost:3000/painel.html
+
 
 ---
 
 ## 📂 Estrutura do Projeto
 
-├── server.js # Servidor backend (Express + Socket.io) 
-├── package.json # Dependências e scripts do projeto 
-└── public/ # Ficheiros do frontend 
-    ├── painel.html # Painel de controlo principal 
-    ├── ac.html # Páginas de estado individuais... 
-    ├── maquina_cafe.html 
-    ├── telemovel.html 
-    ├── script.js # Lógica do cliente (UI e comunicação com o servidor) 
-    └── style.css # Estilos da aplicação
-
+```
+/
+├── .gitignore          # Ignora a pasta node_modules
+├── package-lock.json   # Garante versões exatas das dependências
+├── package.json        # Dependências e scripts do projeto
+├── server.js           # Servidor backend (Express + Socket.io)
+└── public/             # Ficheiros do frontend
+    ├── painel.html     # Painel de controlo principal
+    ├── ac.html         # Páginas de estado individuais...
+    ├── maquina_cafe.html
+    ├── telemovel.html
+    ├── script.js       # Lógica do cliente (UI e comunicação)
+    └── style.css       # Estilos da aplicação
+```
 
 ### Como Funciona a Comunicação
 
